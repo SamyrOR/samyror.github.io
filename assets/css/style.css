@@ -1,0 +1,28 @@
+.my-bg{
+    background-color: #8A0917;
+}
+.social a[href='https://github.com/samyror']{
+    background: url(/home/samyr/Documentos/Projetos/website/assets/images/GitHub-Mark-Light-32px.png);
+    background-size: 32px 32px;
+}
+.social a[href='https://www.linkedin.com/in/samyr-ribeiro-82a720145/']{
+    background: url(/home/samyr/Documentos/Projetos/website/assets/images/linkedin-3-32.png);
+    background-size: 32px 32px;
+}
+.social a{
+    display: block;
+    width: 32px;
+    height: 32px;
+}
+.social li{
+    display: inline-block;
+    margin-left: 1em;
+}
+.my-bquote-footer{
+    display: block;
+    font-size: 80%;
+    color: #6c757d;
+}
+.foot{
+font-family: 'Share Tech Mono', monospace;
+}

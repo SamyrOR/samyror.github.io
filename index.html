@@ -1,22 +1,25 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" class="h-100">
 <head>
     <meta charset="UTF-8">
     <title>Samyr Oliveira Ribeiro</title>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="icon" type="imagem/png" href="./assets/images/fav.icon">
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="d-flex flex-column h-100">
+
     <!--Menu de navegação-->
-    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(204, 0, 0);"> 
-        <a class="navbar-brand" href="#">
-            <img src="assets/images/tentativa-de-logo.png" width="30" height="30" class="d-inline-block align-top" loading="lazy">
-            Samyr
+    <nav class="navbar navbar-expand-lg navbar-dark my-bg shadow-lg"> 
+        <div class="container">
+
+        <a class="navbar-brand foot" href="#">
+            SAMYR
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-expanded="false">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="container">
             <div class="collapse navbar-collapse" id="navbarToggler">
                 <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                     <li class="nav-item">
@@ -33,15 +36,17 @@
         </div>
     </nav>
     <!--Fim do menu de navegação-->
+
     <!--Conteudo principal-->
-    <main class="container pt-3">
+    <main role="main" class="container pt-3">
         <figure class="image-fluid text-center">
             <img class="rounded-circle" src="./assets/images/montanha.jpg" alt="" width="200" height="200">
         </figure>
-        <h2 class="text-center">
-            Samyr Oliveira Ribeiro
-        </h2>
-        <p class="pt-2 mt-5 d-flex align-items-center">
+        <blockquote class="blockquote text-center">
+            <h2 class="mb-1">Samyr Oliveira Ribeiro</h2>
+            <footer class="my-bquote-footer text-center"><cite title="Source Title">Desenvolvedor Front End</cite></footer>
+          </blockquote>
+        <p class="pt-2 mt-4 d-flex align-items-center">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed tincidunt dolor. Fusce suscipit,
             nunc in congue dignissim, magna felis ultrices lacus, ac aliquet dolor nibh in felis. 
             Nunc scelerisque erat ac consectetur blandit. Maecenas placerat sodales nisi, ac ornare mi gravida a.
@@ -51,11 +56,19 @@
         </p>
     </main>
     <!--Fim do contudo principal-->
-    <footer class="pt-3 mt-5 text-light fixed-bottom"style="background-color: rgb(204, 0, 0)">
-        <span>
-            © Todos os direitos reservados
-        </span>
+
+    <footer class="mt-auto pt-2 text-light my-bg">
+        <div class="container d-flex justify-content-between align-items-center">
+            <span>
+                © Todos os direitos reservados
+            </span>
+            <ul class="social row">
+                <li><a class="text-hide col-xm-4" href="https://github.com/samyror" target="_blank">Git Hub</a></li>
+                <li><a class="text-hide col-xm-4" href="https://www.linkedin.com/in/samyr-ribeiro-82a720145/" target="_blank">Likedin</a></li>
+            </ul>
+        </div>
     </footer>
+    
     <script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
     <script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
