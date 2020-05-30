@@ -2,11 +2,11 @@
     background-color: #8A0917;
 }
 .social a[href='https://github.com/samyror']{
-    background: url(../assets/images/GitHub-Mark-Light-32px.png);
+    background: url(../images/GitHub-Mark-Light-32px.png);
     background-size: 32px 32px;
 }
 .social a[href='https://www.linkedin.com/in/samyr-ribeiro-82a720145/']{
-    background: url(../assets/images/linkedin-3-32.png);
+    background: url(../images/linkedin-3-32.png);
     background-size: 32px 32px;
 }
 .social a{
