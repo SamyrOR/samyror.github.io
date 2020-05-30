@@ -26,3 +26,8 @@
 .foot{
 font-family: 'Share Tech Mono', monospace;
 }
+.img{
+    width: 400px;
+    height: 400px;
+    transform: rotate(-13deg);
+}
