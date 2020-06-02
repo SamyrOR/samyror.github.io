@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" class="h-100">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,15 +11,15 @@
     <script>
     function sendMail() {
         var link = "mailto:samyr@live.com"
-                + "&subject=" + escape(document.getElementById('subject-input').value)
-                + "&body=" + escape(document.getElementById('text-area').value)
+                    + "&subject=" + escape(document.getElementById('subject-input').value)
+                    + "&body=" + escape(document.getElementById('text-area').value)
         ;
 
         window.location.href = link;
     }
     </script>
 </head>
-<body>
+<body class="d-flex flex-column h-100">
 
     <!--Menu de navegação-->
     <nav class="navbar navbar-expand-lg navbar-dark my-bg shadow-lg"> 
@@ -37,7 +37,7 @@
                         <a class="nav-link" href="carreira.html">Carreira</a>
                     </li>
                     <li class="nav-item ml-lg-3">
-                        <a class="nav-link"  href="porfolio.html">Portfólio</a>
+                        <a class="nav-link"  href="porftolio.html">Portfólio</a>
                     </li>
                     <li class="nav-item ml-lg-3">
                         <a class="nav-link my-active" href="#">Contato</a>
@@ -54,11 +54,7 @@
             ou apenas deseja enviar uma mensagem, por favor, envie um e-mail!
         </p>
         <form class="pt-3">
-            <div class="form-group row align-items-center">
-                <label class="col-sm-2 col-form-label"for="email-input">Seu email:</label>
-                <div class="col-xm-4">
-                    <input class="form-control" id="email-input" type="email" placeholder="email@email.com">
-                </div>
+
             </div>
             <div class="form-group row">
                 <label class="col-sm-2 col-form-label"for="assunto-input">Assunto:</label>
@@ -77,7 +73,7 @@
     </main>
     <!-- Fim do conteudo principal -->
     <!--Rodapé-->
-    <footer class="mt-3 pt-2 text-light my-bg">
+    <footer class="mt-auto pt-2 text-light my-bg">
       <div class="container d-flex justify-content-between align-items-center">
           <span>
               © Todos os direitos reservados
