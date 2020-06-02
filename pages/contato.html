@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br" class="h-100">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,8 +8,18 @@
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="icon" type="imagem/png" href="../assets/images/fav.icon">
     <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <script>
+    function sendMail() {
+        var link = "mailto:samyr@live.com"
+                + "&subject=" + escape(document.getElementById('subject-input').value)
+                + "&body=" + escape(document.getElementById('text-area').value)
+        ;
+
+        window.location.href = link;
+    }
+    </script>
 </head>
-<body class="d-flex flex-column h-100">
+<body>
 
     <!--Menu de navegação-->
     <nav class="navbar navbar-expand-lg navbar-dark my-bg shadow-lg"> 
@@ -24,13 +34,13 @@
             <div class="collapse navbar-collapse" id="navbarToggler">
                 <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link " href="carreira.html">Carreira</a>
+                        <a class="nav-link" href="carreira.html">Carreira</a>
                     </li>
                     <li class="nav-item ml-lg-3">
                         <a class="nav-link"  href="porfolio.html">Portfólio</a>
                     </li>
                     <li class="nav-item ml-lg-3">
-                        <a class="nav-link active" href="#">Contato</a>
+                        <a class="nav-link my-active" href="#">Contato</a>
                     </li>
                 </ul>
             </div>
@@ -38,14 +48,36 @@
     </nav>
     <!--Fim do menu de navegação-->
     <!-- Conteudo principal -->
-    <main>
-        <div class="text-center">
-            <img src="../assets/images/under-construction.jpeg" class=" img mt-3 img-fluid">
-        </div>
+    <main class="container pt-5">
+        <h1 class="text-center">Entre em contato comigo</h1>
+        <p class="text-center">Se você tem uma proposta de emprego, sugestão, crítica
+            ou apenas deseja enviar uma mensagem, por favor, envie um e-mail!
+        </p>
+        <form class="pt-3">
+            <div class="form-group row align-items-center">
+                <label class="col-sm-2 col-form-label"for="email-input">Seu email:</label>
+                <div class="col-xm-4">
+                    <input class="form-control" id="email-input" type="email" placeholder="email@email.com">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-sm-2 col-form-label"for="assunto-input">Assunto:</label>
+                <div class="col-xm-4">
+                    <input class="form-control" id="subject-input" type="text" placeholder="Assunto">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-sm-2 col-form-label"for="text-area">Mensagem:</label>
+                <div class="col-xm-4">
+                    <textarea class="form-control" id="text-area" cols="40" rows="8" placeholder="Corpo do e-mail"></textarea>
+                </div>
+            </div>
+            <button class="btn btn-danger" onclick="sendMail(); return false" >Enviar</button>
+        </form>
     </main>
     <!-- Fim do conteudo principal -->
     <!--Rodapé-->
-    <footer class="mt-auto pt-2 text-light my-bg">
+    <footer class="mt-3 pt-2 text-light my-bg">
       <div class="container d-flex justify-content-between align-items-center">
           <span>
               © Todos os direitos reservados
