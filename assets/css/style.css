@@ -1,5 +1,8 @@
+:root{
+    --main-color: #8A0917;
+}
 .my-bg{
-    background-color: #8A0917;
+    background-color: var(--main-color);
 }
 .social a[href='https://github.com/samyror']{
     background: url(../images/GitHub-Mark-Light-32px.png);
