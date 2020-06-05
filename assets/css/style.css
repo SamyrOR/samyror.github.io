@@ -41,3 +41,7 @@ font-family: 'Share Tech Mono', monospace;
     color: #fff !important;
     font-weight: bold;
 }
+.my-card{
+    width: 510px;
+    height: 512px;
+}
