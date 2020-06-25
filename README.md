@@ -1,7 +1,9 @@
+## Visit this:
 # samyror.github.io
-Repository for the creation of my personal web site
 ### Developed with:
-Bootstrap 4.5
+- HTML5
+- CSS3
+- JavaScript ES6
+- Bootstrap 4.5
 
-I basically developed my own website with HTML5, CSS, JS and Bootstrap 4.5.
-Thats have things like a bit about me, my carrer, objectives, projects, and a form to contact me
+Im very glad about creating my own personal website, totally responsive, where i put in pratice the knowledges of front-end technologies, and some SEO tags, coded with much love, proud of my self, take a look and tell me what you think!

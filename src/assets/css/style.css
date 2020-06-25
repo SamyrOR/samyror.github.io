@@ -6,16 +6,16 @@
 }
 .social a[href='https://github.com/samyror']{
     background: url(../images/GitHub-Mark-Light-32px.png);
-    background-size: 32px 32px;
+    background-size: 2rem 2rem;
 }
 .social a[href='https://www.linkedin.com/in/samyr-ribeiro-82a720145/']{
     background: url(../images/linkedin-3-32.png);
-    background-size: 32px 32px;
+    background-size: 2rem 2rem;
 }
 .social a{
     display: block;
-    width: 32px;
-    height: 32px;
+    width: 2rem;
+    height: 2rem;
 }
 .social li{
     display: inline-block;
@@ -30,8 +30,8 @@
 font-family: 'Share Tech Mono', monospace;
 }
 .img{
-    width: 400px;
-    height: 400px;
+    width: 25rem;
+    height: 25rem;
     transform: rotate(-13deg);
 }
 .indent{
@@ -43,4 +43,8 @@ font-family: 'Share Tech Mono', monospace;
 }
 .my-card{
     height: 512px;
+}
+
+.my-list{
+    list-style: circle;
 }
